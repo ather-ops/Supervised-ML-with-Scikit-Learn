@@ -1,4 +1,4 @@
-# Machine Learning with Scikit-Learn
+# Supervised Machine Learning with Scikit-Learn
 
 A structured, 7-project curriculum applying classical ML algorithms through production-grade pipelines. This is the direct companion to [Machine-Learning-from-scratch](https://github.com/ather-ops/Machine-Learning-from-scratch) — together they form a complete two-repository learning system.
 
