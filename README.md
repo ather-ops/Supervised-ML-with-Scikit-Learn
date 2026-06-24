@@ -24,65 +24,6 @@ The separation is intentional. People who skip straight to sklearn end up treati
 
 ---
 
-## Repository Structure
-
-```
-ML-with-Scikit-Learn/
-│
-├── 01-Data-Preprocessing/
-│   ├── data_cleaning.ipynb
-│   ├── feature_scaling.ipynb
-│   └── outlier_detection.ipynb
-│
-├── 02-Linear-Regression/
-│   ├── simple_linear_regression.ipynb
-│   ├── multiple_linear_regression.ipynb
-│   └── projects/
-│       ├── house_price_prediction.ipynb
-│       └── student_scores_prediction.ipynb
-│
-├── 03-Logistic-Regression/
-│   ├── binary_classification.ipynb
-│   ├── multiclass_classification.ipynb
-│   └── projects/
-│       ├── fraud_detection.ipynb
-│       ├── loan_approval.ipynb
-│       └── iris_classification.ipynb
-│
-├── 04-KNN/
-│   ├── knn_classification.ipynb
-│   ├── knn_regression.ipynb
-│   └── projects/
-│       └── wine_classification.ipynb
-│
-├── 05-Clustering/
-│   ├── kmeans_clustering.ipynb
-│   ├── hierarchical_clustering.ipynb
-│   └── projects/
-│       └── customer_segmentation.ipynb
-│
-├── 06-Model-Evaluation/
-│   ├── cross_validation.ipynb
-│   ├── learning_curves.ipynb
-│   ├── confusion_matrix.ipynb
-│   └── roc_auc_curves.ipynb
-│
-├── 07-Dimensionality-Reduction/
-│   ├── pca.ipynb
-│   └── projects/
-│       └── digits_visualization.ipynb
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-├── utils/
-│   └── helpers.py
-├── requirements.txt
-└── README.md
-```
-
----
-
 ## Projects
 
 | # | Project | Algorithm | Difficulty | Status |
@@ -94,31 +35,6 @@ ML-with-Scikit-Learn/
 | 05 | Loan Approval | Logistic Regression | Intermediate | In Progress |
 | 06 | Customer Segmentation | K-Means Clustering | Intermediate | Planned |
 | 07 | Digits Visualization | PCA | Intermediate | Planned |
-
----
-
-## Curriculum
-
-### Module 1 — Data Preprocessing
-Covers the work that happens before any model is trained: handling missing values with `SimpleImputer`, scaling with `StandardScaler` and `MinMaxScaler`, encoding categoricals, and detecting outliers. Every downstream module depends on getting this right.
-
-### Module 2 — Linear Regression
-Simple and multiple linear regression on real datasets. The focus is on understanding the residuals, R² score, and RMSE — and knowing when linear assumptions hold versus when they break.
-
-### Module 3 — Logistic Regression
-Binary and multiclass classification. Covers the sigmoid function, decision boundaries, class imbalance handling with `class_weight='balanced'`, and reading a full `classification_report`.
-
-### Module 4 — K-Nearest Neighbors
-Distance-based classification and regression. Covers the trade-off that KNN is fast to train (it just stores data) but slow at prediction (it searches all neighbors). Hyperparameter search over K.
-
-### Module 5 — Clustering
-K-Means with the elbow method for selecting optimal K, plus hierarchical clustering with dendrograms. The customer segmentation project applies both on real purchasing behavior data.
-
-### Module 6 — Model Evaluation
-The full evaluation toolkit: cross-validation, learning curves for diagnosing overfitting, confusion matrices, ROC curves, and AUC scores. This module is method-agnostic — everything here applies to every algorithm in the repo.
-
-### Module 7 — Dimensionality Reduction
-PCA for feature compression and visualization. Covers explained variance ratios and how to choose the number of components without losing meaningful information.
 
 ---
 
@@ -204,8 +120,6 @@ These topics are covered in their own dedicated repositories and are intentional
 | [decision-trees-forest](https://github.com/ather-ops/decision-trees-forest) | Decision Trees and Random Forest — from scratch and with sklearn |
 | ather-ops/ensemble-methods | Gradient Boosting, AdaBoost, and stacking (coming soon) |
 | ather-ops/neural-networks-sklearn | MLPClassifier, MLPRegressor, and the MNIST project (coming soon) |
-
-The separation keeps each repository focused. A repository that covers everything covers nothing well.
 
 ---
 
